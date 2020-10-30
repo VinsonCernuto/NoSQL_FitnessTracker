@@ -18,7 +18,13 @@
   https://evening-wildwood-75150.herokuapp.com/
   
   ## Usage
-  
+  <img src="public\images\main.png">
+
+  <img src="public\images\addCardio.png>
+
+  <img src="public\images\lifting.png>
+
+  <img src="public\images\dashboard.png">
   
   ## License
    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br />
