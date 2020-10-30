@@ -1,7 +1,7 @@
 {
-  "name": "mongoose_skeleton",
+  "name": "fitnesstracker",
   "version": "1.0.0",
-  "description": "",
+  "description": "App using noSQL to track workouts",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,11 +9,19 @@
     "watch": "nodemon server.js",
     "seed": "node seeders/seed.js"
   },
-  "author": "",
+  "author": "Vinson Cernuto",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
     "mongoose": "^5.3.16",
     "morgan": "^1.9.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinsonCernuto/NoSQL_FitnessTracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VinsonCernuto/NoSQL_FitnessTracker/issues"
+  },
+  "homepage": "https://github.com/VinsonCernuto/NoSQL_FitnessTracker#readme"
 }
