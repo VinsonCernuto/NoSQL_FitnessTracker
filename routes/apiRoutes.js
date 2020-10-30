@@ -13,7 +13,7 @@ module.exports = function(app) {
         });
     });
     
-    // Creates  new workout in the workout db
+    // Creates new workout in workout db
     app.post("/api/workouts", async (req, res)=> {
         try{
             const response = await db.Workout.create({type: "workout"})
@@ -30,10 +30,9 @@ module.exports = function(app) {
         const workoutId = params.id;
         let savedExercises = [];
 
-        // gets current workout and saves itto the  current workout
+        // gets all currently saved exercises for the current workout
         db.Workout.find({_id: workoutId})
             .then(dbWorkout => {
-                // console.log(dbWorkout)
                 savedExercises = dbWorkout[0].exercises;
                 res.json(dbWorkout[0].exercises);
                 let allExercises = [...savedExercises, body]
